@@ -1,0 +1,85 @@
+{
+    "name": "workspace-color",
+    "displayName": "Workspace Color",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "saitofjp",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/saitofjp/vscode-workspace-collor.git"
+    },
+    "activationEvents": [
+        "onCommand:workspaceColor.setColor",
+        "onCommand:workspaceColor.nextColor",
+        "onCommand:workspaceColor.resetColor"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "workspaceColor.setColor",
+                "title": "Set Workspace Color"
+            },
+            {
+                "command": "workspaceColor.nextColor",
+                "title": "Next Workspace Color"
+            },
+            {
+                "command": "workspaceColor.resetColor",
+                "title": "Reset Workspace Color"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Workspace Color Configuration",
+            "properties": {
+                "workspaceColor.targetTheme": {
+                    "type": "string",
+                    "scope": "resource",
+                    "default":"activityBar.background",
+                    "description": "target Theme Color"
+                },
+                "workspaceColor.colorList": {
+                    "type": "array",
+                    "scope": "resource",
+                    "items": {
+                        "type": "string"
+                    },
+                    "default": [
+                        "#f39700",
+                        "#e60012",
+                        "#9caeb7",
+                        "#00a7db",
+                        "#009944",
+                        "#d7c447",
+                        "#9b7cb6",
+                        "#00ada9",
+                        "#bb641d",
+                        "#e85298",
+                        "#0079c2"
+                    ],
+                    "description": "Color List https://www.colordic.org/ranking/"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
