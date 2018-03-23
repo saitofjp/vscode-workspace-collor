@@ -25,7 +25,7 @@ const calcNextColor = (current : string | null, config:Config ): string | null =
     if (index == -1) {
         return null;
     }
-    return list[index + 1];
+    return list[index + 1] || list[0];
 }
 
 export class Usecase {
