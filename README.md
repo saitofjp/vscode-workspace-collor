@@ -1,5 +1,6 @@
 # Workspace Color
 
+Easily change part of Color theme for Workspace setting.
 ## Features
 
 ![usage](images/usage.gif)
@@ -12,19 +13,15 @@
 
 ## Extension Settings
 
-Todo
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* `workspaceColor.targetTheme`: default `activityBar.background` [Color Theme](https://code.visualstudio.com/docs/getstarted/theme-color-reference)
+* `workspaceColor.colorList`: color list
 
 ## [Release Notes](CHANGELOG.md)
+
+## Issues
+Submit the [issues](https://github.com/saitofjp/vscode-workspace-collor/issues) if you find any bug or have any suggestion.
+
+## Contribution
+Fork the [repo](https://github.com/saitofjp/vscode-workspace-collor) and submit pull requests.

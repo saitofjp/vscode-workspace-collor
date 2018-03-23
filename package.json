@@ -1,15 +1,24 @@
 {
     "name": "workspace-color",
     "displayName": "Workspace Color",
-    "description": "",
+    "description": "Easily change part of Color theme for Workspace setting.",
     "version": "0.0.1",
     "publisher": "saitofjp",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.16.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Themes"
     ],
+    "keywords": [
+        "color",
+        "theme",
+        "workspace",
+        "folder",
+        "customization"
+  ],
     "repository": {
         "type": "git",
         "url": "https://github.com/saitofjp/vscode-workspace-collor.git"
@@ -43,7 +52,7 @@
                     "type": "string",
                     "scope": "resource",
                     "default":"activityBar.background",
-                    "description": "target Theme Color"
+                    "description": "target Color Theme"
                 },
                 "workspaceColor.colorList": {
                     "type": "array",
@@ -64,7 +73,7 @@
                         "#e85298",
                         "#0079c2"
                     ],
-                    "description": "Color List https://www.colordic.org/ranking/"
+                    "description": "Color List"
                 }
             }
         }
