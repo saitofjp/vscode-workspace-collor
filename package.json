@@ -2,7 +2,7 @@
     "name": "workspace-color",
     "displayName": "Workspace Color",
     "description": "Easily change part of Color theme for Workspace setting.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "saitofjp",
     "icon": "images/logo.png",
     "engines": {

@@ -1,8 +1,8 @@
 'use strict';
 import { workspace, commands, ExtensionContext } from 'vscode';
-import { Usecase } from './Usecase';
-import { ColorCustomizationsRepository } from './ColorCustomizations';
-import { Config } from './Config';
+import { Usecase } from './usecase';
+import { ColorCustomizationsRepository } from './colorCustomizations';
+import { Config } from './config';
 
 
 export function activate(context: ExtensionContext) {

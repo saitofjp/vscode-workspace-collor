@@ -1,6 +1,6 @@
 import { window, workspace } from 'vscode';
-import { ColorCustomizationsRepository } from "./ColorCustomizations";
-import { Config } from './Config';
+import { ColorCustomizationsRepository } from "./colorCustomizations";
+import { Config } from './config';
 
 const CheckOpenFolder = (target: any, name: string, descriptor: PropertyDescriptor) => {
     const delegate = descriptor.value;
