@@ -5,12 +5,6 @@ Easily change part of Color theme for Workspace setting.
 
 ![usage](images/usage.gif)
 
-## Installation
-
-[Download vsix](https://github.com/saitofjp/vscode-workspace-collor/releases)
-
-[Offline Install](https://stackoverflow.com/questions/37071388/how-to-install-vscode-extensions-offline/38866913)
-
 ## Extension Settings
 
 This extension contributes the following settings:
